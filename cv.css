@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background:linear-gradient(to right,#0C2427,#276D9B);
+    list-style: none;
+}
+.resume{
+    width: 800px;
+    background: #EFF8F3;
+    margin: 25px auto;
+    display: flex;
+}
+.left{
+    background:#EFF8F3;
+    width: 350px;
+    padding: 0 20px;
+}
+.right{
+width: calc(100% - 300px);
+}
+.left .img_holder{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.left .img_holder img {
+    width: 200px;
+    border-radius: 30px;
+}
+
+.pb {
+    padding-bottom: 20px;
+}
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color:#0C2427;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.title:before {
+    content: "";
+    position: absolute;
+    
+    right: 0;
+    width: 50px;
+    height: 2px;
+    background:black ;
+}
+
+.left .icon{
+    font-size: 20px;
+    color:#EFF8F3;
+
+}
+.left .text {
+    color: #EFF8F3;
+ 
+    font-size: 14px;
+}
+.contact .li_wrap {
+display: flex;
+align-items: center;
+width: 100% ;
+margin-bottom: 15px;
+
+}
+.contact .li_wrap .icon{
+    width: 50px;
+    height: 50px;
+    background: #0C2427;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.contact .li_wrap .text{
+    width: calc(100%-50px);
+    word-break: break-word;
+    color:#0C2427;
+}
+li{
+    list-style: none;
+}
+
+.skills ul,
+.hobbies ul,
+.sistemas ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.skills .li_wrap,
+.hobbies .li_wrap,
+.sistemas .li_wrap{
+width: 125px;
+height: 125px;
+margin-bottom: 15px;
+border-radius: 15px;
+background:#0C2427;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.skills .li_wrap{
+    border:2px solid #276D9B;
+    
+}
+.skills .li_wrap .text,
+.hobbies .li_wrap .text,
+.sistemas .li_wrap .text {
+   
+    margin-top: 10px;
+}
+
+.hobbies .li_wrap {
+    border:2px solid #404E88;
+}
+.skills .li_wrap .text,.sistemas .li_wrap .text{
+    word-break: break-word;
+    text-align: center;
+}
+.skills .li_wrap:hover{
+   
+    background:#276D9B;
+}
+
+.hobbies .li_wrap .text,
+.hobbies .li_wrap .icon{
+    color:#EFF8F3;
+    word-break: break-word;
+    text-align: center;
+}
+.hobbies .li_wrap:hover,.sistemas .li_wrap:hover{
+    background: #fff;
+}
+.hobbies .li_wrap:hover .text,
+.hobbies .li_wrap:hover .icon,
+.sistemas .li_wrap:hover .text,
+.sistemas .li_wrap:hover .icon {
+    color: #0C2427;
+}
+
+.header{
+    background: #0C2427;
+    padding: 15px 30px;
+    color:#EFF8F3;
+    height: 420px;
+
+}
+.header .name {
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#EFF8F3;
+}
+.header .role {
+    font-weight: 300;
+    font-size: 20px;
+}
+.header .about{
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+.right_inner {
+    padding: 30px;
+    color:#0C2427;
+}
+.right_inner .education {
+    margin-top: 30px;
+
+
+}
+
+.right_inner .li_wrap {
+    display: flex;
+    margin-bottom: 15px;
+}
+.right_inner .li_wrap .date {
+  
+    width: 700px;
+    color:#404E88;
+}
+.right_inner .li_wrap .info{
+    width: 1000px;
+    padding-left: 25px;
+    position: relative;
+}
+.right_inner .li_wrap .info_title  {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.right_inner .li_wrap .info_com{
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.right_inner .li_wrap .info_cont{
+    margin-top: 15px;
+
+}
+.right_inner .li_wrap .info:before{
+    content:"";
+    position: absolute;
+    top: 3px;
+    left:0;
+    width: 10px;
+    height:10px;
+    background:#0C2427;
+    border-radius: 50%;
+}
+
+}
+.right_inner .li_wrap .info:after{
+    content:"";
+    position: absolute;
+    top: 10px;
+    left:5px;
+    width: 10px;
+    height:90%;
+    background:blue;
+}
+
+.right_inner .exp_wrap .info_cont{
+    border-bottom: 2px solid #0C2427;
+    padding-bottom: 5px;
+}
+
+.resume {
+    box-shadow:0px 3px 3px 0px gray;
+}
