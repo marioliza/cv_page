@@ -1,0 +1,344 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color: #C8CDE5;
+ 
+}
+div.yo {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #164249;
+  border: 5px solid #fff;
+  height: 25%;
+    color: #F7F1F8;
+}
+.habilidades {
+  display:inline-block;
+  background-color: #F7F1F8;
+  color: #181E34;
+  width: 30%;
+  margin: 0 auto;
+  box-shadow:0px 3px 5px 0px #000000;
+}
+.habilidades span{
+  display: inline-block;
+  padding: 5px 25px;
+  text-align: left;
+}
+.habilidades h3 {
+  padding: 5px 25px ;
+}
+progress{
+  width: 20em;
+}
+  /*
+  html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333333;
+  position:fixed;
+  width:100%;
+  z-index:10;
+}
+
+nav {
+  margin: 0;
+  padding: 20px 0;
+}
+
+nav li {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  display:inline-block;
+  width: 100px;
+}
+
+main {
+  text-align: center;
+  position:relative;
+  top:80px;
+}
+
+main h1 {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  margin-top: 0px;
+  padding-top: 80px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.jumbotron {
+  height: 800px;
+  background-image: url("https://content.codecademy.com/projects/broadway/bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn-main {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-default {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;  
+  margin-bottom: 20px;      
+}
+
+.supporting {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.supporting .col {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  display:inline-block;
+  width:200px;
+  height:200px;
+}
+
+.supporting img {
+  height: 32px;
+}
+
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.supporting a {
+  background-color: white;
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #333333; 
+}
+
+@media (max-width: 500px) {
+  main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+
+  .supporting .col {
+    width: 100%;
+  }
+}
+a {
+  color: #2176FF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+ 
+a:hover {
+  text-decoration: none;
+}
+
+.nav-link{
+  text-decoration:none;
+}
+.nav-link:hover{
+  color:#5495ff;
+}
+.btn{
+  text-decoration:none;
+  font-size:18px;
+  background-color:white;
+  border-radius:6px;
+  padding:10px;
+ cursor:pointer;
+ text-transform:uppercase;
+ transition: all 1s ease-out;
+}
+.btn:hover{
+  font-size:19px;
+}
+.activity{
+   border: 1px solid #2176FF;
+  cursor: pointer;
+  text-decoration: none;
+}
+.activity:hover{
+  font-size:20px;
+}
+.breadcrumb > li {
+display:inline;
+}
+
+.breadcrumb li+li::before {
+	padding: 10px;
+  content:">";
+  
+
+}
+
+.breadcrumb a {
+text-decoration:none;
+}
+
+.breadcrumb a:hover {
+color:red;
+}
+.breadcrumb li{
+display:inline;
+}
+
+.breadcrumb li+li::before{
+  content:">";
+  color:white;
+}
+
+BREADCRUMBS STYLE---------------------------------
+.breadcrumb {
+  text-align: left;
+}
+.breadcrumb li {
+  float: left;
+}
+
+.breadcrumb a {
+  color: #fff;
+  background: darkcyan;
+  text-decoration: none;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 15px;
+  padding: 0 5px;
+}
+.breadcrumb a::before,
+.breadcrumb a::after {
+  content: "";
+  position: absolute;
+  border-color: darkcyan;
+  border-style: solid;
+  border-width: 15px 5px;
+}
+.breadcrumb a::before {
+  left: -10px;
+  border-left-color:transparent;
+}
+.breadcrumb a::after {
+  left: 100%;
+  border-color: transparent;
+  border-left-color: darkcyan;
+}
+.breadcrumb a:hover {
+  background-color: blue;
+}
+.breadcrumb a:hover::before {
+  border-color: blue;
+  border-left-color: transparent;
+}
+.breadcrumb a:hover::after {
+  border-left-color: blue;
+}
+
+styles breadcrumbs 2--------------------
+.breadcrumb {
+  text-align: left;
+}
+.breadcrumb li {
+  display: inline;
+}
+.breadcrumb  li.location+li.location::before {
+  color: gray;
+  content: ">";
+}
+.breadcrumb a {
+  display: inline;
+}
+.attribute a{
+  color:gray;
+}
+.attribute a::after{
+  content:" x"
+  font-size:8px;
+  vertical-align: super;
+}
+
+STYLING ATTRIBUTE BREADCRUMBS ------------------------------------------ AFTER
+
+.breadcrumb li{
+  display:inline;
+  padding: 5px;
+
+}
+.breadcrumb li.location+li.location + li.attribute::before{
+  content:"/";
+}
+
+.breadcrumb a:hover{
+  background-color:green;
+  color:white;
+}
+.breadcrumb li.attribute a{
+  color:gray;
+}
+.breadcrumb li.attribute::after{
+   content: "new";
+  color: red;
+  font-size: 10px;
+  vertical-align: super;
+}
