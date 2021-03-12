@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.grid{
+    display: grid;
+    grid-template-areas : "nav"
+                        "content"
+                          "footer";                       
+    grid-template-rows: 5% 90% 5%;
+    grid-template-columns: 1fr;
+    
+    
+}
+/* Header section --------------------------------- --------------*/
+.header{
+   grid-area: nav;   
+   
+}
+ul {
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
+}
+
+li{
+    display: inline-block;
+    padding: 20px; 
+}
+li:hover{
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+/* ----------------------------  End Header Section  ------------------  */
+
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template: 20% 10% 10% / repeat(4,1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+    background-image:url("fondo.svg");
+}
+.profile {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+}
+
+.image{
+    height: 100%;
+    position: relative;   
+}
+.info{
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  float: right;
+  position: relative;
+  background-size: cover;
+  background-position: bottom;
+  box-shadow: 0 1px 2px 0 rgba(74, 161, 228, 0.3),0 2px 6px 2px rgba(60,64,67,.15);
+z-index: -1;
+  background-color: #F7F7F8;
+}
+.info h2, .info p {
+    position: relative;
+    bottom: 350px;
+}
+.CV {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    padding: 200px 0px;
+    position: relative;
+   bottom: 550px;
+}
+.cv_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    left: 35px;
+    bottom: 80px;
+    padding-top: 15px;
+}
+.cv_ p {
+  
+    color:purple;
+    padding: 5px ;
+    border-radius: 10px;
+    font-size: 10px;
+    position: relative;
+    bottom: 220px;
+}
+.cv_ i {
+    font-size: 30px;
+    position: relative;
+    bottom: 220px;
+    
+}
+.about {
+    
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    padding: 200px 0px;
+    position: relative;
+    left: 70px;
+    bottom: 550px;
+    
+}
+.about_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    left: 35px;
+    bottom: 80px;
+    padding-top: 15px;
+}
+.about_ p {
+    color:purple;
+    padding: 5px ;
+    border-radius: 10px;
+    font-size: 10px;
+    position: relative;
+    bottom: 220px;
+}
+.about_ i {
+    font-size: 30px;
+    position: relative;
+    bottom: 220px;
+  
+}
+.proyectos {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    padding: 200px 0px;
+    left: 220px;
+    position: relative;
+    bottom: 550px;
+    
+}
+.proyectos_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    left: 35px;
+    bottom: 80px;
+    padding-top: 15px;
+}
+.proyectos_ p {
+    color:purple;
+    padding: 5px ;
+    border-radius: 10px;
+    font-size: 10px;
+    position: relative;
+    bottom: 220px;
+}
+.proyectos_ i {
+    font-size: 30px;
+    position: relative;
+    bottom: 220px;
+    
+}
+footer {
+    grid-area: footer;
+    background-color: #212121;;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-top: 30px;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+footer p, footer img {
+    font-size: 13px;
+    color: #fff;
+    padding: 15px;
+}
+
+.fa-whatsapp{
+    font-size: 30px;
+    color: #31724B;
+    position: relative;
+    align-self: center;
+    left: 800px;
+}
+.fa-instagram {
+    font-size: 30px;
+    color: red;
+    position: relative;
+    align-self: center;
+    left: 820px;
+}
+
+
+a {
+    color: purple;
+    
+}

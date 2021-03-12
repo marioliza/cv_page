@@ -4,8 +4,31 @@
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+header ul {
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
+}
+
+li.nav{
+    display: inline-block;
+    padding: 20px; 
+}
+.fa-whatsapp{
+    font-size: 30px;
+    color: #31724B;
+    position: relative;
+    align-self: center;
+    left: 800px;
+}
+.fa-instagram {
+    font-size: 30px;
+    color: red;
+    position: relative;
+    align-self: center;
+    left: 820px;
+}
+
 body{
-    background:linear-gradient(to right,#0C2427,#276D9B);
+    background:linear-gradient(to right,#f7fbfc,#ddf0fd);
     list-style: none;
 }
 .resume{
@@ -246,7 +269,21 @@ align-items: center;
 .resume {
     box-shadow:0px 3px 3px 0px gray;
 }
+.wrapper {
+    margin-top: 80px;
+}
 
+nav.navigator {
+background-color:#EFF8F3 ;
+text-align: right;
+}
+li.nav {
+display: inline-block;
+color:#404E88;
+padding: 10px 20px;
+font-size: 400;
+
+}
 @media only screen and (min-width: 320px) and (max-width: 600px) {
 
  .left {
@@ -315,4 +352,21 @@ align-items: center;
 /*.right_inner .exp .title {
     margin-bottom: 30px ;
     margin-top: 20px;
+}
+*/
+footer {
+    background-color: #212121;;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-top: 30px;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+footer p, footer img {
+    font-size: 13px;
+    color: #fff;
+    padding: 15px;
 }
