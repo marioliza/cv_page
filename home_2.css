@@ -1,20 +1,24 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /* Header section --------------------------------- --------------*/
-.header{
-   grid-area: nav;   
-   
-}
-ul {
+
+header ul {
     box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
+    
+    
+    
 }
 
 li.nav{
     display: inline-block;
     padding: 20px; 
+}
+li.hover:hover {
+    font-size: 600;
 }
 li.anchor {
 bottom: 130px;
@@ -40,12 +44,18 @@ li:hover{
 
 .content {
     background-image:url("fondo.svg");
-    height: 1000px;
+    height: 600px;
 }
 .image{
     height: 100%;
     position: relative;   
 }
+.info img {
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+
 .info{
   width: 100%;
   padding: 20px;
@@ -60,7 +70,10 @@ z-index: -1;
 }
 .info h2, .info p {
     position: relative;
-    bottom: 420px;
+    bottom: 370px;
+    left: 30px;
+
+    
 }
 
 .cv_{
@@ -70,9 +83,10 @@ z-index: -1;
     width: 300px;
     position: relative;
     left: 200px;
-    bottom: 400px;
+    bottom: 360px;
     padding-top: 15px;
 }
+
 .cv_ p {
   
     color:purple;
@@ -94,7 +108,7 @@ flex-direction: column;
 align-items: center;
 width: 300px;
 position: relative;
-left: 900px;
+left: 930px;
 bottom: 650px;
 padding-top: 15px;
 }
@@ -118,7 +132,7 @@ padding-top: 15px;
     align-items: center;
     position: relative;
     
-    bottom: 1350px;
+    bottom: 1280px;
     padding-top: 15px;
 }
 .proyectos_ p {
@@ -169,10 +183,16 @@ footer p, footer img {
 }
 
 
-a {
+a.me {
     color: purple;
+    font-style:oblique;
+   
     
 }
 html {
-    height: 1200px;
+    height: 800px;
+}
+
+.grid {
+    height: 800px;
 }
