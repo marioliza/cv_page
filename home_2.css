@@ -35,6 +35,7 @@ nav ul {
     padding: 1rem ;
     align-items: center;
     width: 100%;
+   
 }
 nav ul li{
     list-style: none;
@@ -72,191 +73,170 @@ ul a.Whatsapp:hover {
 
 /* --------------------------- content section ------------------------  */
 .wrapper {
-    margin-top: 0.5rem;
-    display: grid;
-    grid-template: 10% 40% 40% 10% / 10% 40% 40% 10%;
-    row-gap: 10px;
-    column-gap: 10px;
-    background-color:#F7F7F8;
-}
-.image {
-    grid-row: 2;
-    grid-column: 2;
-}
-.conocimientos {
-    grid-row: 3;
-    grid-column: 2;
-}
-.perfil {
-    grid-row: 2;
-    grid-column: 3;
-}
-.yo {
-    grid-row: 3;
-    grid-column: 3;
-}
-
-.image {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid #0C2427;
-    box-shadow: 0 1px 0px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
-
-}
-
-.image img, figure {
-    width: 13.5rem;
-    height: 20.5rem;
-    background-color: #F7F7F8;
-    
-}
-.figcaption{
-    font-size: 0.9rem;
-    text-align: center;
-    margin: 1rem;
-    padding: 0px;
-}
-.conocimientos {
-    display: flex;
-    flex-direction: row;
-  
-    padding: 1rem;
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
-    background-color: #0C2427;
-    color: #F7F7F8;  
-}
-.conocimientos li, .conocimientos h2{
-    padding: 0.3rem;
-}
-.conocimientos h2 {
-    padding: 1rem 1.5rem;
-}
-.conocimientos li {
-    list-style:outside;
-    position: relative;
-    
-}
-.perfil {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 4rem;
-    align-content: center;
-    justify-content: center;
-    border: 0.5px solid #212121;
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);  
-    background-color: #0C2427;
-    color: #F7F7F8;  
-}
-}
-.yo {
-    padding: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    
-}
-.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    margin-top: 0rem;
-    color: #F7F7F8;
-}
-.buttons li {
-    list-style: none;
-}
-
-a.me{
-    color: #F7F7F8;
-    margin-top: 0.5rem;
-
-}
-.humanidades{
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-.universidad{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 1rem;
-}
-.universidad i {
-    margin-right: 1rem;
-}
-.buttons i {
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
    
-    font-size: 2rem;
-    color:#F7F7F8;
-   border: 0.1px solid #F7F7F8;
-    padding: 0.5rem;
-    background-color:#0C2427;
-    border-radius: 5px;
+}
+.left {
+    flex: 200;
+    display: flex;
+}
+.right {
+    display: flex;
+    flex: 200;
+}
+.image.left {
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 1px 1px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);  
+
+    margin-top: 0.5rem;
+}
+.image {
+    background: radial-gradient(52.89% 87.51% at 64.58% 54.35%,#fff 0,#fff 100%);
+    flex: 100;
+}
+img {
+    margin-top: 0.2rem;
+    position: relative;
+    top: 0.2rem;
+}
+.imagen {
+    margin-left:2rem ;
+    flex: 1 2 100;
+    
 }
 .up {
-    display: flex;
-    flex-direction: column;
-    margin-left: 4rem;
+    margin-left: 0;
+    flex: 500;
+    align-content: center;
+    justify-content: center;
+    padding: 0rem;
+    flex-wrap: wrap;
+    height: 50%;
+    align-self: center;
+    text-align: center;
+  
+}
+.figcaption {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #212121;
+    font-size: 1rem;
+    flex: 50;
+}
+.universidad i {
+    padding: 1rem;
+}
+.universidad {
+    padding:0.5rem;
+    color: #212121  ;
+    font-size: 1rem;
+}
+.buttons {
     
-
-}
-em{
-    background-color: #0C2427;
-    color: #F7F7F8;
-    padding: 0.1rem;
-    margin-top: 1rem;
-}
-h1 {
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-}
-
-p{
-    line-height: 1.5rem;
-    font-size: 250;
-    text-align: start;
-}
-
-.hobbies p {
-    padding: 4rem;
-    font-size: 300;
-    background-color:rgba(255, 255,255, 0.5);
-    color:#0C2427;
-    width: 60%;
-    margin: 0 auto;
-    height: 40%;
     text-align: center;
 }
-.right.yo {
-    background-image: url("/soccer.jpg");
-    background-position: center;
-    background-size: cover;
+.i i{
+    padding: 0 2.5rem;
+    font-size: 2rem;
+    opacity: 0.6;
+    color: #163D57;
 }
-.statistics  {
- background-image: url("/online-statistics.jpg");
- background-size: cover;
- background-position:top;
- width: 60%;
- box-shadow: 0 1px 2px 0  rgb(245, 245, 245,0.15),0 2px 6px 2px rgb(245, 245, 245,0.15);
- opacity: 0.9;  
+.pro{
+    padding: 1px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 100px;
+    width: 26%;
+    margin: 0 auto;
+    color: #163D57;
+    display: flex;
+    justify-content: center;
+    flex: 500;
+}
+.pro p {
+    padding:10px 30px ;
+    height: 100%;
+    font-weight: 500;
+}
+.pro p:hover{
+    border-radius: 100px;
+    background: #163D57;
+    color: #fff;
+   
+}
+
+.spaces {
+    padding: 20px 0;
+}
+.conocimientos {
+    background: #F7F7F8;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.conocimientos h2 {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    color:#163D57;
 }
 .cono {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
-.cono h2 {
-    position: relative;
-    right: 1rem;
+.cono ul {
+    display: flex;
+    flex-direction: row;
 }
-.cono li {
-    font-weight: 250;
+.cono ul li {
+    padding: 10px 25px;
+    list-style: none;
+}
+.cono ul li:hover {
+    background:#163D57;
+    color: #fff;
+    border-radius: 100px;
+}
+.perfil {
+    padding: 50px 30px;
+}
+.perfil h3 {
+   color: #163D57;
+font-weight: 700;
+width: 20%;
+align-self: center;
+}
+.perfil p {
+    padding: 20px 30px;
+    width: 50%;
+    height: auto;
+   text-align: justify;
+}
+.humanidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0px;
+}
+.yo {
+    background-image: url("soccer.jpg") ;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem 1rem;
+    justify-content: center;
+    display: flex;
+}
+.hobbies {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0 2rem;
+    width: 40%;
+}
+.hobbies p {
+    padding: 3rem 1rem;
+
 }
 
 footer {
@@ -276,81 +256,180 @@ footer p, footer img {
     padding: 15px;
 }
 
-
-/* RESPONSIVE DESIGN ----- PHONES ---------*/
-@media  (max-width:575px) , (max-width: 600px)
-{ 
-  .wrapper {
-      height: 800px;
-      grid-template: 10% 20% 20% 20% 20% 10% / 100%;
-  }
-  .image{
-      grid-row: 2;
-      grid-column: 1;
-  }
-  .image img {
-     margin-bottom: 3rem;
-     height: fit-content;
-  
-  }
-  .conocimientos{
-      grid-row:3;
-      grid-column: 1;
-      padding: 1rem;
+@media (max-width: 700px) {
+    .figcaption {
+        font-size: 0.8rem;
+    }
+    .universidad i {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        
+    }
+    .up {
+        padding: 0 20px;
+        margin-left: 0px;
+    }
+    .pro {
+        width: 100%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .universidad {
+        text-align: center;
+        padding: 0.8rem;
+    }
+    .i i{
+        padding: 0.5rem 1.2rem;
+    }
+    .pro {
+        width: 80%;
+    }
+    .conocimientos {
+        width: 100%;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+    }
+    .cono ul li {
+        padding: 2px 15px;
+        font-size: 1rem ;
+        text-align: center;
+        align-self: center;
+    }
+    .humanidades {
+        width: 100%;
+        padding: 0px;
+        flex-direction: column;
+    }
+    .perfil {
+        padding: 20px 0px;
+    }
+    .perfil p {
+        padding: 5px;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.4rem;
+        background: rgba(255, 255, 255, 1)
+    }
+    .perfil h3 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    footer p {
+        font-size: 0.8rem;
+       
+    }
+    .hobbies {
+        width: 100%;
+    }
+    .yo {
+        width: 100%;
+        background-size: cover;
+        background-image: url("soccer.jpg");
+        background: whitesmoke;
+    }
+    .hobbies {
+        background: rgba(255, 255, 255, 0.9);
+        width: 80%;
+       text-align: center;
+    }
     
-  }
-  .perfil {
-      grid-row:4;
-      grid-column: 1;
-  }
-  .yo{
-      grid-column: 1;
-      grid-row: 5;
-  }
-  .hobbies p {
-      padding: 0.5rem;
-      font-size: 80%;
-  }
-  .perfil {
-      font-size: 0.8rem;
-      font-weight: 250;
-    width: 100%;
-      overflow: scroll;
-      padding: 5rem;
-  }
-  .perfil p{
-  
-      
-  }
-  .buttons{
-      margin-top: 2rem;
-  }
-  .cono {
-     width: 80%;
-     display: flex;
-     flex-direction: row;
-
-  }
-  .cono h2 {
-      font-size: 70%;
-      align-self: center;
-      margin-left: 1rem;
-  }
-  .statistics {
-      display: none;
-  }
-  .cono li{
-      font-size: 65%;
-      margin-left: 1rem;
-      
-
-  }
-  footer p {
-      font-size: 50%;
-      width: 100%;
-  }
-  .up {
-      display: none;
-  }
-  
+}
+@media (max-width: 375px) {
+    .figcaption {
+        font-size: 0.6rem;
+    }
+    .universidad i {
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+        
+    }
+    .up {
+        padding: 0 20px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+    }
+    .image img {
+        height: auto;
+        width: 100%;
+    }
+    .pro {
+        width: 100%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .universidad {
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
+    .i i{
+        padding: 0rem 0.5rem;
+    }
+    .i {
+        text-align: center;
+    }
+    .pro {
+        width:100%;
+    }
+    .pro p {
+        padding: 10px 15px;
+    }
+    .conocimientos {
+        width: 100%;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+    }
+    .cono ul li {
+        padding: 2px 5px;
+        font-size: 0.8rem ;
+        text-align: center;
+        align-self: center;
+    }
+    .humanidades {
+        width: 100%;
+        padding: 0px;
+        flex-direction: column;
+    }
+    .perfil {
+        padding: 20px 0px;
+    }
+    .perfil p {
+        padding: 5px;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.4rem;
+        background: rgba(255, 255, 255, 1)
+    }
+    .perfil h3 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    footer p {
+        font-size: 0.8rem;
+       
+    }
+    .hobbies {
+        width: 100%;
+    }
+    .yo {
+        width: 100%;
+        background-size: cover;
+        background-image: url("soccer.jpg");
+        background: whitesmoke;
+    }
+    .hobbies {
+        background: rgba(255, 255, 255, 0.9);
+        width: 80%;
+       text-align: center;
+    }
+    
 }
